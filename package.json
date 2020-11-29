@@ -11,7 +11,7 @@
     "build": "tsc -p .",
     "test": "NODE_ENV=test mocha --check-leaks -r ts-node/register -r tsconfig-paths/register \"test/**/*.spec.ts\"",
     "postinstall": "cd client && npm install && cd ..",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client && npm run build"
   },
   "author": "Darian Sampare",
   "license": "MIT",
