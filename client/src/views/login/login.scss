@@ -1,0 +1,44 @@
+.login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .paper {
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .icon {
+      font-size: 50px;
+      padding-bottom: 50px;
+    }
+
+    form {
+      width: 100%;
+
+      .form-control {
+        margin-bottom: 25px;
+      }
+
+      .login-button {
+        margin-top: 25px;
+        width: 100%;
+      }
+    }
+
+    .register-button {
+      margin-top: 25px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.register-form {
+  .actions {
+    text-align: right;
+    margin-top: 25px;
+  }
+}
