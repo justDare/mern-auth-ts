@@ -8,12 +8,15 @@ export default function createServer() {
 
   app.use(routes);
 
+  console.log(path.join(__dirname, "../client/build"));
+  console.log(path.resolve(__dirname, "../", "client", "build", "index.html"));
+
   // Serve static assets if in production
   if (process.env.NODE_ENV === "prod") {
     console.log(`serving production build`);
 
     // Set static folder
-    app.use(express.static("../client/build"));
+    app.use(express.static(path.join(__dirname, "../client/build")));
 
     app.get("*", (req, res) => {
       res.sendFile(
