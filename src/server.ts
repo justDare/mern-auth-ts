@@ -4,12 +4,9 @@ import path from "path";
 
 export default function createServer() {
   const app: Application = express();
+
   app.use(express.json({ limit: "50mb" }));
-
   app.use(routes);
-
-  console.log(path.join(__dirname, "../client/build"));
-  console.log(path.resolve(__dirname, "../", "client", "build", "index.html"));
 
   // Serve static assets if in production
   if (process.env.NODE_ENV === "prod") {

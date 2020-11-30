@@ -8,10 +8,11 @@
 - MongoDB
 - TypeScript (Frontend & Backend)
 - Material UI
+- JSON Web Tokens (Authentication Mechanism)
 
 ## Running Locally
 
-### Enviroment Variables
+### Environment Variables
 
 You'll have to set these to run the project locally. The development connection string is the only db connection that's needed to run in dev mode.
 
@@ -33,4 +34,4 @@ You'll have to set these to run the project locally. The development connection 
  npm run dev
 ```
 
-Starts client on port 3000 and server on port 4000
+Starts client react app on port 3000 and server on port 4000.
